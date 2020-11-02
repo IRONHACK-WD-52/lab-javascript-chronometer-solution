@@ -12,12 +12,6 @@ class Chronometer {
         callback();
       }
     }, 10);
-    // this.intervalMilliSec = setInterval(() => {
-    //   this.milliseconds++;
-    //   if (callback) {
-    //     callback();
-    //   }
-    // }, 1);
   }
   getMinutes() {
     return Math.floor(this.currentTime / 6000);
@@ -26,7 +20,6 @@ class Chronometer {
     return Math.floor(this.currentTime / 100) % 60;
   }
   getMilliseconds() {
-    // return this.milliseconds - this.currentTime * 1000;
     return this.currentTime % 100;
   }
 
